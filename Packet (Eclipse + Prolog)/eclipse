@@ -1,0 +1,7 @@
+#! /bin/sh
+ECLIPSEDIR="${ECLIPSEDIR:-/Users/ooganam/Downloads/eclipse_basic}"
+DYLD_LIBRARY_PATH="$ECLIPSEDIR/lib/x86_64_macosx:$DYLD_LIBRARY_PATH"
+DAVINCIHOME="${DAVINCIHOME:-$ECLIPSEDIR/daVinci/x86_64_macosx}"
+JRE_HOME="${JRE_HOME:-}"
+export ECLIPSEDIR DYLD_LIBRARY_PATH DAVINCIHOME JRE_HOME
+exec "/Users/ooganam/Downloads/eclipse_basic/lib/x86_64_macosx/eclipse.exe" "$@"
